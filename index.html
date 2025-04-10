@@ -1,44 +1,60 @@
 <!DOCTYPE html>
-<html lang="bg">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Keysoul - Начало</title>
-  <link rel="stylesheet" href="style.css"/>
+  <title>Keysoul - Home</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <img src="images/logo.png" alt="Keysoul Logo" class="logo"/>
     <nav>
-      <a href="index.html">Начало</a>
-      <a href="products.html">Продукти</a>
-      <a href="contact.html">Контакти</a>
+      <ul>
+        <li><a href="index.html">Начало</a></li>
+        <li><a href="products.html">Продукти</a></li>
+        <li><a href="#contact">Контакт</a></li>
+      </ul>
     </nav>
   </header>
 
   <main>
     <section class="hero">
       <h1>Добре дошли в Keysoul</h1>
-      <p>Механични клавиатури с душа.</p>
+      <p>Качествени механични клавиатури за всеки ентусиаст</p>
     </section>
 
-    <section class="promos">
-      <h2>Промоции</h2>
-      <div class="product-card">
-        <img src="images/keyboard1.jpg" alt="Model Z"/>
-        <h3>Model Z</h3>
-        <p class="price">149 лв. <span class="old-price">199 лв.</span></p>
+    <section class="products">
+      <h2>Промоционални продукти</h2>
+      <div class="product-grid">
+        <div class="product">
+          <img src="images/keyboard1.jpg" alt="Keyboard 1"/>
+          <h3>Keysoul Pro 1</h3>
+          <p class="price">199 лв</p>
+        </div>
+        <div class="product">
+          <img src="images/keyboard2.jpg" alt="Keyboard 2"/>
+          <h3>Keysoul Lite</h3>
+          <p class="price">149 лв</p>
+        </div>
       </div>
-      <div class="product-card">
-        <img src="images/keyboard2.jpg" alt="Model Alpha"/>
-        <h3>Model Alpha</h3>
-        <p class="price">229 лв. <span class="old-price">269 лв.</span></p>
-      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Свържи се с нас</h2>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Име" required/>
+        <input type="email" name="email" placeholder="Имейл" required/>
+        <textarea name="message" placeholder="Съобщение" required></textarea>
+        <button type="submit">Изпрати</button>
+      </form>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 Keysoul. Всички права запазени.</p>
+    <p>&copy; 2025 Keysoul. Всички права запазени.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
