@@ -1,40 +1,37 @@
-
 <!DOCTYPE html>
 <html lang="bg">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Контакти</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Контакти - Keysoul</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <header>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png" alt="Keysoul Logo" class="logo" />
+    <img src="images/logo.png" alt="Keysoul Logo" class="logo"/>
     <nav>
-      <ul>
-        <li><a href="index.html">Начало</a></li>
-        <li><a href="products.html">Продукти</a></li>
-        <li><a href="contact.html">Контакти</a></li>
-      </ul>
+      <a href="index.html">Начало</a>
+      <a href="products.html">Продукти</a>
+      <a href="contact.html">Контакти</a>
     </nav>
   </header>
 
   <main>
-    <h2>Свържи се с нас</h2>
+    <h1>Свържи се с нас</h1>
     <form id="contact-form">
-      <input type="text" name="name" placeholder="Име" required>
-      <input type="email" name="email" placeholder="Имейл" required>
+      <input type="text" name="name" placeholder="Вашето име" required />
+      <input type="email" name="email" placeholder="Вашият имейл" required />
       <textarea name="message" placeholder="Съобщение" required></textarea>
       <button type="submit">Изпрати</button>
     </form>
-    <p id="form-response"></p>
+    <p id="form-status"></p>
   </main>
 
   <footer>
-    <p>&copy; 2025 Keysoul. Всички права запазени.</p>
+    <p>© 2025 Keysoul. Всички права запазени.</p>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
