@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keysoul</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header>
+        <img src="assets/logo.png" alt="Keysoul Logo" class="logo" />
+        <nav>
+            <ul>
+                <li><a href="index.html">Начало</a></li>
+                <li><a href="products.html">Продукти</a></li>
+                <li><a href="#contact">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Добре дошли в Keysoul</h1>
+        <p>Мястото за качествени механични клавиатури</p>
+    </section>
+
+    <section id="contact" class="contact-form">
+        <h2>Свържете се с нас</h2>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Име" required />
+            <input type="email" name="email" placeholder="Имейл" required />
+            <textarea name="message" placeholder="Съобщение" required></textarea>
+            <button type="submit">Изпрати</button>
+        </form>
+        <p id="status-message"></p>
+    </section>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
