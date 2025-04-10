@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Продукти</title>
+  <title>Контакти</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
 </head>
 <body>
   <header>
@@ -20,23 +21,20 @@
   </header>
 
   <main>
-    <h2>Нашите продукти</h2>
-    <div class="product-list">
-      <div class="product">
-        <img src="https://source.unsplash.com/400x300/?keyboard,mechanical" alt="Product 1">
-        <h3>Клавиатура Model X</h3>
-        <p>Цена: 199 лв.</p>
-      </div>
-      <div class="product">
-        <img src="https://source.unsplash.com/400x300/?keyboard,gaming" alt="Product 2">
-        <h3>Клавиатура Model Y</h3>
-        <p>Цена: 249 лв.</p>
-      </div>
-    </div>
+    <h2>Свържи се с нас</h2>
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Име" required>
+      <input type="email" name="email" placeholder="Имейл" required>
+      <textarea name="message" placeholder="Съобщение" required></textarea>
+      <button type="submit">Изпрати</button>
+    </form>
+    <p id="form-response"></p>
   </main>
 
   <footer>
     <p>&copy; 2025 Keysoul. Всички права запазени.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
